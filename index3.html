@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Garry's Gang</title>
+</head>
+<body>
+
+  <h1>Garry's Gang Raid Tokens</h1>
+<p> Add a token after completing a raid!
+  <div>
+    <label for="nameInput">Add Character:</label>
+    <input type="text" id="nameInput">
+    <button onclick="addCharacter()">Add</button>
+  </div>
+<th> Raid Group 3 </th>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Add Token</th>
+        <th>Value</th>
+        <th>Remove Token</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Table rows will be added dynamically using JavaScript -->
+    </tbody>
+  </table>
+
+  <p>Total: <span id="total">0</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
